@@ -1,0 +1,104 @@
+<!--
+Laboratorio 05 - HTML Semantico - Ejercicio 05
+Autor: Brigitte Karolay Velasquez Puma
+Colaboro: Nadie
+Tiempo: 
+-->
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Computación - Inicio</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    body { font-family: Arial, sans-serif; line-height:1.6; margin:0; padding:0; }
+    header, footer { background:#0b3d91; color:#fff; padding:1rem; }
+    header .branding { display:flex; align-items:center; gap:1rem; }
+    nav ul { list-style:none; margin:0; padding:0; display:flex; gap:1rem; }
+    nav a { color: #fff; text-decoration:none; }
+    main { display:flex; gap:1rem; padding:1rem; }
+    main > .contenido { flex:3; }
+    aside { flex:1; border-left:1px solid #ddd; padding-left:1rem; }
+    article { background:#f9f9f9; padding:1rem; margin-bottom:1rem; border-radius:6px; }
+    figure { margin:0 0 0.5rem 0; }
+    footer { font-size:0.9rem; }
+    .logo { width:60px; height:auto; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="branding">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo" class="logo">
+      <div>
+        <h1>Blog de Computación</h1>
+        <p>Aprende, crea y comparte</p>
+      </div>
+    </div>
+
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contenido">
+      <!-- Articulo 1 -->
+      <article>
+        <h2>Introducción a la Programación</h2>
+        <figure>
+          <img src="https://img.freepik.com/foto-gratis/collaje-antecedentes-programacion_23-2149901789.jpg?semt=ais_hybrid&w=740&q=80"
+          alt="Programación" style="max-width:100%;">
+          <figcaption>Conceptos básicos de programación.</figcaption>
+        </figure>
+        <p>En este artículo vemos los fundamentos de la programación: variables, estructuras de control y funciones.</p>
+      </article>
+
+      <!-- Articulo 2 -->
+      <article>
+        <h2>Redes y Conectividad</h2>
+        <figure>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcOrreluK6w8z7AaTYJv0oJ9TtbLflglLteA&s" alt="Redes" style="max-width:100%;">
+          <figcaption>Topologías y protocolos.</figcaption>
+        </figure>
+        <p>Se explica la diferencia entre modelos OSI y TCP/IP, así como conceptos de encaminamiento y seguridad.</p>
+      </article>
+
+      <!-- Artículo 3 -->
+      <article>
+        <h2>Inteligencia Artificial: conceptos</h2>
+        <figure>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9B6E8SnPoqijTqk8AuRxpOKisBPI_X-fAdA&s" alt="IA" style="max-width:100%;">
+          <figcaption>Breve historia y aplicaciones.</figcaption>
+        </figure>
+        <p>Introducción a los tipos de aprendizaje, redes neuronales y aplicaciones prácticas en la industria.</p>
+      </article>
+    </div>
+
+    <aside aria-label="Enlaces relacionados">
+      <h3>Enlaces relacionados</h3>
+      <ul>
+        <li><a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://www.w3.org/" target="_blank" rel="noopener">W3C</a></li>
+        <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer id="contacto">
+    <address>
+      <strong>Brigitte Karolay Velasquez Puma</strong><br>
+      Email: <a href="bvelasquezp@unsa.edu.pe">bvelasquezp@unsa.edu.pe</a><br>
+      Facultad de Ingeniería de Sistemas - 2025
+    </address>
+    <p>&copy; 2025 - Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
