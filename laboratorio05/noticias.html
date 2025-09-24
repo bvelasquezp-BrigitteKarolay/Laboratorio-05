@@ -1,0 +1,106 @@
+<!--
+Laboratorio 05 - HTML Semantico - Ejercicio_07
+Autor: Brigitte Karolay Velasquez Puma
+Colaboro: 
+Tiempo:
+-->
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Noticias - Laboratorio 05</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Noticias de Computación</h1>
+    <nav aria-label="Menú principal" class="nav-principal">
+      <ul class="menu-desktop">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+      </ul>
+
+      <details class="menu-mobile">
+        <summary aria-expanded="false">Menú ▾</summary>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+        </ul>
+      </details>
+    </nav>
+  </header>
+
+  <main>
+    <section id="locales" aria-labelledby="titulo-locales">
+      <h2 id="titulo-locales">Noticias locales</h2>
+
+      <article>
+        <h3>Evento de programación universitaria</h3>
+        <time datetime="2025-09-10">10 de septiembre de 2025</time>
+        <figure>
+          <img src="https://www.unsa.edu.pe/wp-content/uploads/2024/10/Portada_Hackatn-Innovasur-2024-1-878x426.png" alt="Evento universitario">
+          <figcaption>Estudiantes en hackathon local.</figcaption>
+        </figure>
+        <p>La universidad organizó un hackathon con proyectos de software y hardware por equipos.</p>
+      </article>
+
+      <article>
+        <h3>Nuevo laboratorio de redes inaugurado</h3>
+        <time datetime="2025-09-01">1 de septiembre de 2025</time>
+        <figure>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvI9ST-dG8xIUcPhfMMzK3_1H-04yGCyFBw&s" alt="Laboratorio de redes">
+          <figcaption>Laboratorio equipado con routers y switches.</figcaption>
+        </figure>
+        <p>El nuevo laboratorio permitirá prácticas avanzadas en redes y ciberseguridad.</p>
+      </article>
+    </section>
+
+    <section id="internacionales" aria-labelledby="titulo-internacionales">
+      <h2 id="titulo-internacionales">Noticias internacionales</h2>
+
+      <article>
+        <h3>Avances en inteligencia artificial</h3>
+        <time datetime="2025-08-20">29 de agosto de 2025</time>
+        <figure>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrsCYcodmsENarTBO5Kiw9YTx29fbjkSMOQ&s" alt="Avances en IA">
+          <figcaption>Investigadores publican nuevos modelos.</figcaption>
+        </figure>
+        <p>Se publicaron resultados que mejoran el rendimiento en tareas de visión por computadora.</p>
+      </article>
+
+      <article>
+        <h3>Conferencia internacional de ciberseguridad</h3>
+        <time datetime="2025-07-30">14 de julio de 2025</time>
+        <figure>
+          <img src="https://www.espoch.edu.ec/wp-content/uploads/2025/06/54583175206_ebdccae8c9_c.jpg" alt="Conferencia ciberseguridad">
+          <figcaption>Expertos discuten amenazas y soluciones.</figcaption>
+        </figure>
+        <p>La conferencia reunió a especialistas de todo el mundo para intercambiar buenas prácticas.</p>
+      </article>
+
+      <nav aria-label="Noticias relacionadas">
+        <h4>Noticias relacionadas</h4>
+        <ul>
+          <li><a href="#">Tecnologías emergentes</a></li>
+          <li><a href="#">Educación y TIC</a></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <p>Brigitte Karolay Velasquez Puma - 2025</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('details.menu-mobile').forEach(d => {
+      const s = d.querySelector('summary');
+      d.addEventListener('toggle', () => s.setAttribute('aria-expanded', d.open));
+    });
+  </script>
+
+</body>
+</html>
